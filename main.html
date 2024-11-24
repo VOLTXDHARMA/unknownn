@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltZz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <h1 id="welcome-text"></h1>
+            <div class="bear">
+                <img id="bear-image" src="gambar1.jpg" alt="Bear Image">
+            </div>
+            <p id="question-text">nantii malem mau jalan kaga</p>
+            <div class="buttons">
+                <button id="still-btn" class="btn danger">kagaa</button>
+                <button id="not-btn" class="btn success">mauu</button>
+            </div>
+            <p id="happy-text" class="hidden">makasihh nanti jam setengah 10 ya</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                document.getElementById('welcome-text').textContent = `Hai, ${userName}!`;
+            } else {
+                window.location.href = 'index.html'; // Kembali ke halaman input nama jika belum ada nama
+            }
+        });
+    </script>
+</body>
+</html>

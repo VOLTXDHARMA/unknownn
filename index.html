@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltZz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="name-container">
+        <div class="name-card">
+            <h1>alloo allooo</h1>
+            <p>masukkan nama lu ya tisaa:</p>
+            <input type="text" id="name-input" placeholder="Masukkan nama kamu" />
+            <button id="submit-name" class="btn success">Lanjut</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('submit-name').addEventListener('click', () => {
+            const name = document.getElementById('name-input').value.trim();
+            if (name) {
+                localStorage.setItem('userName', name); // Simpan nama ke localStorage
+                window.location.href = 'main.html'; // Alihkan ke halaman utama
+            } else {
+                alert('Tolong masukkan namamu!');
+            }
+        });
+    </script>
+</body>
+</html>

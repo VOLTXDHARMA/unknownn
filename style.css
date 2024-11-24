@@ -1,0 +1,108 @@
+/* Reset basic styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #f9c5d1, #fbc8d9);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nama Container Styling */
+.name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.name-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.name-card h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.name-card p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#name-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff6b6b;
+    border-radius: 25px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#name-input:focus {
+    border-color: green;
+    box-shadow: 0 0 8px rgba(72, 199, 116, 0.5);
+}
+
+.btn {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #fff;
+}
+
+.btn.success {
+    background-color: #48c774;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Main Container Styling */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.bear img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
